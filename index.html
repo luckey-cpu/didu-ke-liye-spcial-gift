@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise for Didu! 💖</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div id="start-page" class="page-section active">
+        <div class="card">
+            <h1>It's Almost Midnight! 🌟</h1>
+            <p>A little something special is waiting for you...</p>
+            <button id="open-button" onclick="showSurprise()">Click to Open!</button>
+        </div>
+    </div>
+
+    <div id="surprise-page" class="page-section hidden" style="display: none;">
+        
+        <div class="message-container">
+            <h1 class="main-heading">🎉 Happy Birthday, Didu! 🎂</h1>
+            <h2 class="sub-heading">My Biggest Blessing 💖</h2>
+
+            <div class="slideshow-container">
+                <img class="mySlides" src="data:image/jpeg;base64,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" alt="Cute Didu Photo 1" style="display:block;"> 
+                
+               
+                </div>
+
+            <div class="birthday-message">
+                <p>🌸💖 Happy Birthday, Didu! 💖🌸</p>
+                <p>Dear Didu,</p>
+                
+                <p>I wish you a very Happy Birthday 🎂✨ May this year bring endless happiness, love, and success in your life. Your smile is my strength, and I pray you always keep smiling. 💙</p>
+                
+                <p>Thank you for coming into my life and accepting a chomu like me as your brother 😅. I know sometimes I get angry, sometimes I want too much attention, and sometimes I behave like your real brother by invading your privacy… but trust me, it’s only because I care about you deeply.</p>
+                
+                <p>I’m sorry if I ever said anything wrong about your friends, or couldn’t help you when you needed me. Maybe I’m not the best brother… but you are the best sister anyone could ever have. 💖</p>
+                
+                <p>Even if one day you feel like leaving me behind, I’ll never stop praying that you find someone who treats you like a queen 👑, fulfills all your dreams, and never lets you feel alone.</p>
+                
+                <p>You are not just my sister, you are one of the most special parts of my life, and I’ll always be grateful for you. 🌸</p>
+                
+                <p>Once again, 🎉🎂 Happy Birthday, my lovely Didu! 🎉 You are truly my biggest blessing. 💖</p>
+                
+                <p class="signature">With lots of love,<br>Your Chomu Bhai 💙</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple function to switch pages
+        function showSurprise() {
+            // Hide the start page
+            document.getElementById('start-page').style.display = 'none'; 
+            // Show the surprise page (using 'flex' as set in CSS)
+            document.getElementById('surprise-page').style.display = 'flex'; 
+
+            // Start the photo slideshow
+            showSlides();
+        }
+
+        // Photo Slideshow Logic
+        let slideIndex = 0; // Start at 0 for array indexing
+        let slides = document.getElementsByClassName("mySlides");
+
+        function showSlides() {
+            // Hide all slides first
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            // Move to the next slide
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1; // Loop back to the first slide
+            }
+            
+            // Display the current slide
+            slides[slideIndex - 1].style.display = "block";
+            
+            // Change image every 4 seconds (4000 milliseconds)
+            setTimeout(showSlides, 4000); 
+        }
+    </script>
+</body>
+</html>
